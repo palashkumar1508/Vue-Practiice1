@@ -1,5 +1,6 @@
 
 <template>
+  <EventHandling/>
   <ListRendering/>
   <Watchers/>
   <LifeCycleHooks/>
@@ -22,6 +23,7 @@
 </template>
 
 <script setup>
+import EventHandling from './EventHandling.vue';
 import ListRendering from './ListRendering.vue';
 import Watchers from './Watchers.vue'
 import LifeCycleHooks from './LifeCycleHooks.vue'; 
