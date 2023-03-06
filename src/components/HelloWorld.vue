@@ -13,7 +13,7 @@
     <div class="text-cyan-400 h-auto text-4xl flex justify-center items-center p-4 mb-4 w-auto rounded-2xl hover:scale-125 bg-black">{{ fullName }}</div>
     <div class="flex flex-row justify-center items-center p-5">
       <label class="text-[#00FF00] text-2xl" for="">First name:  </label>
-      <input type="text" placeholder="First Name " v-model.lazy="firstName" class="bg-black border w-auto shadow-2xl text-[#00FF00] border-red-500 rounded-xl h-11 p-5 ml-5">
+      <input type="text" placeholder="First Name "  v-model.lazy="firstName" class="bg-black border w-auto shadow-2xl text-[#00FF00] border-red-500 rounded-xl h-11 p-5 ml-5">
       
     </div>
     <div class="flex flex-row justify-center items-center p-5 ">
@@ -35,7 +35,7 @@ import EventHandling from './EventHandling.vue';
 import ListRendering from './ListRendering.vue';
 import Watchers from './Watchers.vue'
 import LifeCycleHooks from './LifeCycleHooks.vue'; 
-  import { ref , computed } from 'vue'
+  import { ref , computed, onMounted } from 'vue'
 
   let firstName = ref("")
   let lastName = ref("")
