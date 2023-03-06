@@ -1,5 +1,10 @@
 
 <template>
+  <!-- <ParentForChild/>
+  <ChildToParent/> -->
+  <Props :first-name="firstName"/>
+  <Props firstName="Ankit"/>
+  <Props firstName="Suraj"/>
   <EventHandling/>
   <ListRendering/>
   <Watchers/>
@@ -23,6 +28,9 @@
 </template>
 
 <script setup>
+// import ParentForChild from './Parent-for-child.vue';
+
+import Props from './Props.vue';
 import EventHandling from './EventHandling.vue';
 import ListRendering from './ListRendering.vue';
 import Watchers from './Watchers.vue'
@@ -35,6 +43,8 @@ import LifeCycleHooks from './LifeCycleHooks.vue';
   let fullName = computed(()=>{
     return `${firstName.value} ${lastName.value}`
   })
+
+
     
 </script>
 <style scoped>
