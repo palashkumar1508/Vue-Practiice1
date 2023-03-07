@@ -1,6 +1,6 @@
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld/>
 </template>
 
 <script setup>
